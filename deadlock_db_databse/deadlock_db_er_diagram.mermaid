@@ -1,0 +1,34 @@
+erDiagram
+    ACCOUNTS {
+        varchar account_id PK
+        numeric balance
+    }
+    ACCOUNT_CREDENTIALS {
+        varchar account_id PK, FK
+        integer pin
+    }
+    TRANSACTIONS {
+        varchar txn_id PK
+        smallint priority
+        timestamp start_time
+        timestamp end_time
+        varchar status
+    }
+    LOCK_EVENTS {
+        integer event_id PK
+        varchar txn_id FK
+        varchar account_id FK
+        varchar event_type
+        timestamp event_time
+    }
+    DEADLOCK_EVENTS {
+        varchar deadlock_id PK
+        timestamp detected_at
+        varchar victim_txn_id FK
+        varchar_array txns_in_cycle
+    }
+
+    ACCOUNTS ||--o| ACCOUNT_CREDENTIALS : "has credentials"
+    ACCOUNTS ||--o{ LOCK_EVENTS : "has lock events"
+    TRANSACTIONS ||--o{ LOCK_EVENTS : "generates"
+    TRANSACTIONS ||--o{ DEADLOCK_EVENTS : "is victim in"
