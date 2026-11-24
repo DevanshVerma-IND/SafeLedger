@@ -1,0 +1,8 @@
+streamlit
+scikit-learn
+numpy
+pandas
+joblib
+flask
+matplotlib
+psycopg2-binary   # only needed for PostgreSQL mode

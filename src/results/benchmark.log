@@ -1,0 +1,34 @@
+1 naive 72.2 739.4 52
+1 wfg 192.9 281.5 160
+1 ordered 292.5 217.8 0
+1 banker 248.6 207.3 0
+1 wfg+ml 276.5 195.7 29
+1 banker+ml 271.9 193.8 0
+2 naive 63.9 792.5 75
+2 wfg 182.8 338.0 118
+2 ordered 323.0 210.7 0
+2 banker 253.2 199.1 0
+2 wfg+ml 278.2 232.7 47
+2 banker+ml 288.4 215.9 0
+3 naive 62.6 740.2 65
+3 wfg 222.1 230.8 113
+3 ordered 285.5 262.1 0
+3 banker 243.3 229.5 0
+3 wfg+ml 287.6 181.2 37
+3 banker+ml 264.8 191.1 0
+4 naive 70.1 785.9 55
+4 wfg 217.9 272.2 136
+4 ordered 354.7 172.0 0
+4 banker 241.8 233.0 0
+4 wfg+ml 299.9 175.0 24
+4 banker+ml 302.8 177.6 0
+5 naive 83.4 666.7 57
+5 wfg 231.8 251.2 107
+5 ordered 359.9 189.8 0
+5 banker 268.6 183.0 0
+5 wfg+ml 278.8 191.7 41
+5 banker+ml 295.7 200.4 0
+sweep workers 4
+sweep workers 8
+sweep workers 16
+sweep workers 32
